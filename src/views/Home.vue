@@ -1,18 +1,36 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container>
+      
+      <h1>
+        Trade or view your portfolio
+      </h1>
+      <h3>
+        You may save/Load your data
+      </h3>
+      <h6>
+        Click on 'End Day' to begin a New Day
+      </h6>
+      <br>
+      <p>
+        Your fund: {{funds}}
+      </p>
+    </b-container>
+    
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+
+  },
+  computed:{
+    funds(){
+      return this.$store.getters.funds;
+    }
   }
 }
 </script>
