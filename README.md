@@ -1,4 +1,4 @@
-# stocktrader
+# stocktrader application using Vue.js and Bootstrap Vue
 
 ## Project setup
 ```
